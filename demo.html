@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyBuddy - Your Modern Travel Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9ff;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e6eaff 100%);
+        }
+        .purple-button {
+            background-color: #6366F1;
+        }
+        .purple-text {
+            color: #6366F1;
+        }
+        .blue-button {
+            background-color: #3B82F6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <h1 class="text-2xl font-bold purple-text">FlyBuddy</h1>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#" class="purple-text font-medium">Flights</a>
+            <a href="#" class="text-gray-500">Hotel</a>
+            <a href="#" class="text-gray-500">Trains</a>
+            <a href="#" class="text-gray-500">Buses</a>
+            <a href="#" class="text-gray-500">Cabs</a>
+        </div>
+        <div>
+            <button class="purple-button text-white px-4 py-2 rounded-lg">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+            <div class="text-orange-500 font-medium mb-2">READY TAKE-OFF</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Your Fly Buddy <span class="purple-text">For Every</span> <br>Journey - Book Fast, Fly Smart</h2>
+            <p class="text-gray-600 mb-6">Plan, book, and take off effortlessly with FlyBuddy — your modern<br>solution to seamless travel. Travel smarter.</p>
+            <button class="purple-button text-white px-6 py-3 rounded-lg font-medium">Let's Fly</button>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="" alt="3D Airplane Illustration" class="w-full max-w-md">
+        </div>
+    </section>
+
+    <!-- Search Form -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex mb-4 border-b pb-4">
+                <button class="mr-4 purple-text font-medium border-b-2 border-indigo-600">One Way</button>
+                <button class="mr-4 text-gray-500">Round Trip</button>
+                <button class="text-gray-500">Multi City</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="relative">
+                    <label class="text-xs text-gray-500 mb-1 block">From</label>
+                    <div class="flex items-center border rounded-lg p-2">
+                        <i class="bi bi-geo-alt text-gray-400 mr-2"></i>
+                        <input type="text" value="Tokyo, Japan" class="w-full outline-none">
+                    </div>
+                </div>
+                <div class="relative">
+                    <label class="text-xs text-gray-500 mb-1 block">To</label>
+                    <div class="flex items-center border rounded-lg p-2">
+                        <i class="bi bi-geo-alt text-gray-400 mr-2"></i>
+                        <input type="text" value="Berlin, Germany" class="w-full outline-none">
+                    </div>
+                </div>
+                <div class="relative">
+                    <label class="text-xs text-gray-500 mb-1 block">Departure</label>
+                    <div class="flex items-center border rounded-lg p-2">
+                        <i class="bi bi-calendar text-gray-400 mr-2"></i>
+                        <input type="text" value="Oct 11, 2023" class="w-full outline-none">
+                    </div>
+                </div>
+                <div class="relative">
+                    <label class="text-xs text-gray-500 mb-1 block">Return</label>
+                    <div class="flex items-center border rounded-lg p-2">
+                        <i class="bi bi-calendar text-gray-400 mr-2"></i>
+                        <input type="text" value="Dec 15, 2023" class="w-full outline-none">
+                    </div>
+                </div>
+                <div class="relative">
+                    <label class="text-xs text-gray-500 mb-1 block">Passengers</label>
+                    <div class="flex items-center border rounded-lg p-2">
+                        <i class="bi bi-person text-gray-400 mr-2"></i>
+                        <input type="text" value="1 Passenger" class="w-full outline-none">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end mt-4">
+                <button class="purple-button text-white p-3 rounded-lg">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Visited Places -->
+    <section class="container mx-auto px-4 mb-16">
+        <h2 class="text-2xl font-bold text-center mb-2">Top Visited Places</h2>
+        <p class="text-gray-500 text-center mb-8">Explore breathtaking landscapes, historic sites, and vibrant cities worldwide</p>
+        
+        <div class="flex overflow-x-auto pb-4 space-x-4">
+            <div class="min-w-[250px] bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="font-medium">Turkish Airlines</h3>
+                </div>
+            </div>
+            <div class="min-w-[250px] bg-white rounded-xl shadow-md overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1540339832862-474599807836?q=80&w=1000&auto=format&fit=crop" alt="Emirates" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="font-medium">Emirates</h3>
+                </div>
+                <div class="absolute top-3 right-3 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="min-w-[250px] bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?q=80&w=1000&auto=format&fit=crop" alt="Qatar Airways" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h3 class="font-medium">Qatar Airways</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Deals -->
+    <section class="container mx-auto px-4 mb-16">
+        <h2 class="text-2xl font-bold text-center mb-2">Flight Deals</h2>
+        <p class="text-gray-500 text-center mb-8">Discover top flight deals for the best experiences at unprecedented prices</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Flight Deal Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+
+            <!-- Flight Deal Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+
+            <!-- Flight Deal Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <!-- Flight Deal Card 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+
+            <!-- Flight Deal Card 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+
+            <!-- Flight Deal Card 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-4">
+                    <img src="https://images.unsplash.com/photo-1583511655826-05700442cea8?q=80&w=1000&auto=format&fit=crop" alt="Turkish Airlines" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-medium">Turkish Airline</h3>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>New York</span>
+                        <div class="mx-2 flex items-center">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <i class="bi bi-geo-alt mr-1"></i>
+                        <span>Paris, France</span>
+                    </div>
+                    <div class="font-bold text-lg">N50,000,000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <button class="blue-button text-white px-6 py-2 rounded-lg">View all</button>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="container mx-auto px-4 mb-16">
+        <h2 class="text-2xl font-bold text-center mb-2">Our Service</h2>
+        <p class="text-gray-500 text-center mb-8">Flight services offer convenient travel, connecting people worldwide with ease</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-red-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-bag text-red-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Bags Fly Free</h3>
+                    <p class="text-gray-500 text-sm">First and second checked bags fly free on all flights</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-purple-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-calendar-check text-purple-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Flexible Booking</h3>
+                    <p class="text-gray-500 text-sm">Change or cancel your booking with ease</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-yellow-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-bell text-yellow-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Free Reminders</h3>
+                    <p class="text-gray-500 text-sm">Get flight status updates and check-in times</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-green-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-headset text-green-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Smart Travel Support</h3>
+                    <p class="text-gray-500 text-sm">Chat with our team 24/7</p>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-blue-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-shield-check text-blue-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Fast & Secure Checkout</h3>
+                    <p class="text-gray-500 text-sm">Complete your booking in under a minute</p>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white rounded-xl shadow-md p-6 flex items-start">
+                <div class="bg-pink-100 rounded-full p-3 mr-4">
+                    <i class="bi bi-globe text-pink-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium mb-2">Built for Africans</h3>
+                    <p class="text-gray-500 text-sm">Easy routing built for Africans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-8 md:mb-0">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/faq-5795852-4849557.png" alt="FAQ Illustration" class="w-full max-w-sm mx-auto">
+            </div>
+            <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold mb-2">Frequently asked questions</h2>
+                <p class="text-gray-500 mb-8">Everything you need to know about the product and billing information tailored for curious individuals.</p>
+                
+                <!-- FAQ Item 1 -->
+                <div class="border-b pb-4 mb-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">How do I book a flight?</h3>
+                        <i class="bi bi-chevron-right text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border-b pb-4 mb-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">What information do I need to book a flight?</h3>
+                        <i class="bi bi-chevron-right text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border-b pb-4 mb-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">Can I book a flight without a passport?</h3>
+                        <i class="bi bi-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="mt-2 text-gray-500 text-sm">
+                        International travel requires a passport. Domestic flights may accept other forms of government-issued ID.
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border-b pb-4 mb-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium">When should I book a flight to get the best deals?</h3>
+                        <i class="bi bi-chevron-right text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="bg-indigo-600 rounded-xl p-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3 mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold text-white mb-2">Subscribe Our Newsletter</h2>
+                <p class="text-indigo-200 mb-4">Subscribe To Receive Our Interesting Updates</p>
+                <div class="flex flex-col sm:flex-row">
+                    <input type="email" placeholder="Enter your email address" class="px-4 py-3 rounded-lg mb-2 sm:mb-0 sm:mr-2 w-full sm:w-auto">
+                    <button class="bg-indigo-800 text-white px-6 py-3 rounded-lg">Subscribe</button>
+                </div>
+            </div>
+            <div class="md:w-1/3">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/travel-booking-5795855-4849560.png" alt="Travel Illustration" class="w-full max-w-sm mx-auto">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
